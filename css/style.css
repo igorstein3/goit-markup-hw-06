@@ -271,7 +271,7 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -373,5 +373,130 @@ img {
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
+  }
+}
+
+/* SECTION HERO */
+
+/* MOBILE */
+.main-page {
+  background-color: #2e2f42;
+  max-width: 320px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media (min-resolution: 192dpi) {
+  .main-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_mob-@2x.jpg);
+  }
+}
+.main-page .container {
+  padding: 72px 52px;
+}
+
+.main-page-title {
+  color: var(--WHITE, #ffffff);
+  text-align: center;
+  /* Header 1 */
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  /* 107.143% */
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+.button-box {
+  background-color: var(--IRIS, #4d5ae5);
+  color: var(--WHITE, #ffffff);
+  /* Button Text */
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  /* 150% */
+  letter-spacing: 0.04em;
+  border: 0px solid var(--IRIS, #4d5ae5);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+}
+.transition {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-box:hover,
+.button-box:focus {
+  background-color: var(--OCEAN, #404bbf);
+  cursor: pointer;
+  border: 0px solid var(--OCEAN, #404bbf);
+  border-radius: 4px;
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .main-page {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_mob_tab.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .main-page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_mob_tab-@2x.jpg);
+    }
+  }
+  .main-page .container {
+    padding: 112px 136px;
+  }
+  .main-page-title {
+    /* Header 1 */
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    /* 107.143% */
+    margin-bottom: 36px;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 1158px) {
+  .main-page {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_desk.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .main-page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_desk-@2x.jpg);
+    }
+  }
+  .main-page .container {
+    padding: 188px 331px;
   }
 }
