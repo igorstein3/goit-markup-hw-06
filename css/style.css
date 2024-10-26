@@ -381,7 +381,6 @@ img {
 /* MOBILE */
 .main-page {
   background-color: #2e2f42;
-  max-width: 320px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -449,7 +448,6 @@ img {
 /* TABLET */
 @media screen and (min-width: 768px) {
   .main-page {
-    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
