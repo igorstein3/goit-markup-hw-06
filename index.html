@@ -55,7 +55,7 @@
           </ul>
         </address>
 
-        <button type="button" class="burger-btn" data-modal-open>
+        <button type="button" class="burger-btn" data-modal-open-1>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#mobile-menu-icon"></use>
           </svg>
@@ -63,9 +63,9 @@
 
         <!-- MOBILE MENU -->
 
-        <div class="mobile-menu" data-modal>
+        <div class="mobile-menu" data-modal-1>
           <div class="container mobile-menu-container">
-            <button type="button" class="close-button" data-modal-close>
+            <button type="button" class="close-button" data-modal-close-1>
               <svg class="close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black"></use>
               </svg>
@@ -138,7 +138,7 @@
       <section class="main-page">
         <div class="container">
           <h1 class="main-page-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="transition button-box">
+          <button type="button" class="transition button-box" data-modal-open>
             Order Service
           </button>
         </div>
@@ -733,9 +733,9 @@
 
     <!-- MODAL WINDOW -->
 
-    <div class="modal-overlay hidden">
-      <div class="modal">
-        <button type="button" class="close-button">
+    <div class="modal-overlay" data-modal>
+      <div class="container modal">
+        <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -802,13 +802,16 @@
               class="visually-hidden user-privacy-checkbox"
               id="user-privacy"
             />
-            <label class="modal-checkbox" for="user-privacy"
-              ><span class="click-icon-box"
+            <label class="modal-checkbox" for="user-privacy">
+              <span class="click-icon-box"
                 ><svg class="click-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Click"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a href="#" class="privasy-policy-link">Privacy Policy</a>
+                </svg>
+              </span>
+              <span class="privasy-policy-text">
+                I accept the terms and conditions of the
+                <a href="#" class="privasy-policy-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="button-box">Send</button>
